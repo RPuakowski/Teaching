@@ -1,15 +1,17 @@
+#################################################################################
+##
 ## problem: how to download automatically large amount of files?
-## solution: double loop foe extration
+## solution: double loop for extration
 ## 
 ## warning: time consuming process (circa 60 minutes on my workstation)
 ## warning: large disk space necessary (3 GB)
-
+##
 #################################################################################
 
 setwd("d:\\Projects\\Imgw\\")
 
 month <- c("01","02","03","04","05","06","07","08","09","10","11","12")
-year <- as.character(c(2009:2010))
+year <- as.character(c(1951:2022))
 
 ### download all the files
 

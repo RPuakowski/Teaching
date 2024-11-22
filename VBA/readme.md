@@ -4,7 +4,7 @@
 ## Application
 ```
 ### Application.ScreenUpdating property (Excel)
-https://learn.microsoft.com/en-us/office/vba/api/excel.application.screenupdating
+[microsoft](https://learn.microsoft.com/en-us/office/vba/api/excel.application.screenupdating)
 
 EN: The code turns off / on screen updating. Makes your code run faster.
 PL: Wstrzymanie odświeżania ekranu w Excel VBA. Przyspiesza działanie kodu.

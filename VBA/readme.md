@@ -8,8 +8,8 @@ https://learn.microsoft.com/en-us/office/vba/api/excel.application.screenupdatin
 
 EN: The code turns off / on screen updating. Makes your code run faster.
 PL: Wstrzymanie odświeżania ekranu w Excel VBA. Przyspiesza działanie kodu.
-
-```                                      
+```
+```
 Application.ScreenUpdating = False
 Application.ScreenUpdating = True                                      
 ```                                      

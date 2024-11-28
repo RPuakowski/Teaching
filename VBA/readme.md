@@ -95,6 +95,8 @@ Workbooks(1).Activate
 Workbooks("Book1.xlsx").Close
 ActiveWorkbook.SaveAs Filename:= "MYFILENAME.xlsx"
 ```
+I recommend you read this tutorial by Paul Kelly.
+[link](https://trumpexcel.com/vba-workbook/)
 
 ### Workbook.AutoSaveOn property
 [link](https://learn.microsoft.com/en-us/office/vba/api/excel.workbook.autosaveon)
@@ -108,4 +110,181 @@ ActiveWorkbook.AutoSaveOn = False
 ActiveWorkbook.AutoSaveOn = True
 ```
 
+### Workbook.Protect / Unprotect
+                                    
+ThisWorkbook.Protect
+ThisWorkbook.Unprotect 
+
+workbook.Protect([Password], [Structure], [Windows])
+ 
+```
+ThisWorkbook.Protect Password:="password"
+ThisWorkbook.Unprotect Password:="password"
+
+ThisWorkbook is the workbook where the running code is stored. 
+	
+ActiveWorkbook.Unprotect
+ActiveWorkbook.Protect Password:="password"
+ActiveWorkbook.Unprotect Password:="password"
+	
+ActiveWorkbook.Protect Password:=InputBox("Enter a protection password:")	
+ActiveWorkbook.UnProtect Password:=InputBox("Enter a protection password:")	
+ActiveWorkbook.Protect "password"
+```
+	
 TBA
+
+Workbook.Activate
+
+Using Workbook Index numbers
+
+Workbook.Close
+
+ActiveWorkbook
+
+ThisWorkbook
+
+Workbooks.Add
+
+Workbooks.Open
+
+Workbooks.Save
+
+-------------------------------------------------------------------------------------------------------------------
+
+## Worksheet object
+[link](https://learn.microsoft.com/en-us/office/vba/api/sheet)
+
+EN: Represents a sheet in a workbook.
+
+PL: Reprezentuje dany arkusz w skoroszycie.
+
+Remember! / Pamiętaj!
+
+    Sheets = Worksheets + Charts
+
+
+### Sheets.Visible property
+
+EN: TBA
+
+PL: TBA
+
+```
+Sheets("Sheet1").Visible = -1
+Sheets("Sheet1").Visible =  0
+Sheets("Sheet1").Visible =  2    
+	
+Sheets("Sheet1").Visible = xlSheetVisible 
+Sheets("Sheet1").Visible = xlSheetHidden
+Sheets("Sheet1").Visible = xlSheetVeryHidden
+
+Sheets("Sheet1").Visible = FALSE
+Sheets("Sheet1").Visible = TRUE
+```
+
+### Sheets.Index property
+
+An index number is a sequential number assigned to a sheet, based on the position of its sheet tab (counting from the left) among sheets of the same type. The following procedure uses the Worksheets property to activate the first worksheet in the active workbook.
+		
+Each sheet has its own sequential number (index) in the collection of all sheets. You can use the index to construct worksheet references.
+		
+
+``` 
+? TypeName(ActiveSheet)
+		
+? Sheets.Count
+? Worksheets.count
+? charts.count
+		
+? Sheet1.Index
+? Sheets("Sheet1").Index
+		
+Sheets("Sheet1").Index = 4 ' invalid property assingment
+``` 
+		
+The index of sheets is the left-to-right order in which they appear.
+
+You can change the index by reordering the sheet.
+
+```
+Sheets("Sheet1").Move Before:=Sheets(1)
+Sheets("Sheet1").Move Before:=Sheets(2)
+Sheets("Sheet1").Move Before:=Sheets(3)
+		
+Sheets("Sheet1").Move After:=Sheets(3)
+Sheets("Sheet1").Move After:=Sheets(2)	
+Sheets("Sheet1").Move After:=Sheets(1)		 
+```
+
+### Choice (Selection)
+
+```
+Worksheets(2).Select
+Sheets(2).Select
+Sheet2.Select
+ActiveSheet.Select
+Sheets.Select
+```
+	
+### Adding
+
+ ```
+Sheets.Add 
+Sheets.Add Before:=Sheets(1)
+Sheets.Add After:=Sheets(2)
+Sheets.Add After:=Sheets(Sheets.Count)
+Sheets.Add.Name = "IlikeCats" 
+Sheets.Add(After:=Sheets("IlikeCats")).Name = "IlikeDogs"
+```
+	
+More: https://www.automateexcel.com/vba/add-and-name-worksheets/
+	
+### Deleting
+
+ ```
+Sheet1.Delete
+Sheet(5).Delete
+Sheets("IlikeCats").Delete
+Sheets("IlikeDogs").Delete
+ActiveSheet.Delete
+```
+
+### Renaming
+	
+```
+Sheet13.Name = "IlikeCats"
+Sheets("Sheet9").Name = "Sheet12"
+Sheets(2).Name = "IlikeDogs"				
+Sheets("IlikeCats").Name = Sheets("IlikeCats").Range("A1")
+```
+
+### Copying
+	
+```
+Sheets("IlikeMice").Copy
+Sheets("IlikeMice").Copy After:=Sheets(1)
+Sheets("IlikeMice").Copy Before:=Sheets("IlikeDogs")
+Sheets("IlikeMice").Copy After:=Sheets(Sheets.Count)
+Sheets("IlikeMice").Copy 
+ActiveSheet.Name = "Sheet1"		
+```
+	
+### Protecting
+	
+```
+Sheets("Sheet1").Protect
+Sheets("Sheet1").Protect Password:="myPassword"
+Sheets("Sheet1").Protect Password:=InputBox("Enter a protection password:")	
+```
+	
+### Unprotecting	
+	
+```
+Sheets("Sheet1").UnProtect
+Sheets("Sheet1").UnProtect Password:="myPassword"
+Sheets("Sheet1").UnProtect Password:=InputBox("Enter a protection password:")	
+```
+
+-------------------------------------------------------------------------------------------------------------------
+

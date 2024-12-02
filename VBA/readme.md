@@ -110,7 +110,7 @@ ActiveWorkbook.AutoSaveOn = False
 ActiveWorkbook.AutoSaveOn = True
 ```
 
-### Workbook.Protect / Unprotect
+### Workbook.Protect / Unprotect method
                                     
 ThisWorkbook.Protect
 ThisWorkbook.Unprotect 
@@ -165,10 +165,11 @@ Remember! / Pamiętaj!
 
 
 ### Sheets.Visible property
+[link](https://learn.microsoft.com/en-us/office/vba/api/excel.worksheet.visible)
 
-EN: TBA
+EN: Returns or sets an XlSheetVisibility value that determines whether the object is visible.
 
-PL: TBA
+PL: Zwraca bądź ustawia własnośc XlSheetVisibility, która wskazuje czy arkusz jest widoczny.
 
 ```
 Sheets("Sheet1").Visible = -1
@@ -184,6 +185,8 @@ Sheets("Sheet1").Visible = TRUE
 ```
 
 ### Sheets.Index property
+[link](https://learn.microsoft.com/en-us/office/vba/api/excel.worksheet.index)
+[link](https://learn.microsoft.com/en-us/office/vba/excel/concepts/workbooks-and-worksheets/refer-to-sheets-by-index-number)
 
 An index number is a sequential number assigned to a sheet, based on the position of its sheet tab (counting from the left) among sheets of the same type. The following procedure uses the Worksheets property to activate the first worksheet in the active workbook.
 		
@@ -217,7 +220,7 @@ Sheets("Sheet1").Move After:=Sheets(2)
 Sheets("Sheet1").Move After:=Sheets(1)		 
 ```
 
-### Choice (Selection)
+### Sheet.Select method
 
 ```
 Worksheets(2).Select
@@ -227,7 +230,7 @@ ActiveSheet.Select
 Sheets.Select
 ```
 	
-### Adding
+### Sheets.Add method
 
  ```
 Sheets.Add 
@@ -240,7 +243,7 @@ Sheets.Add(After:=Sheets("IlikeCats")).Name = "IlikeDogs"
 	
 More: https://www.automateexcel.com/vba/add-and-name-worksheets/
 	
-### Deleting
+### Sheet.Delete method
 
  ```
 Sheet1.Delete
@@ -250,7 +253,7 @@ Sheets("IlikeDogs").Delete
 ActiveSheet.Delete
 ```
 
-### Renaming
+### Sheet.Name property
 	
 ```
 Sheet13.Name = "IlikeCats"
@@ -259,7 +262,7 @@ Sheets(2).Name = "IlikeDogs"
 Sheets("IlikeCats").Name = Sheets("IlikeCats").Range("A1")
 ```
 
-### Copying
+### Sheet.Copy method
 	
 ```
 Sheets("IlikeMice").Copy
@@ -270,7 +273,7 @@ Sheets("IlikeMice").Copy
 ActiveSheet.Name = "Sheet1"		
 ```
 	
-### Protecting
+### Sheet.Protect method
 	
 ```
 Sheets("Sheet1").Protect
@@ -278,7 +281,7 @@ Sheets("Sheet1").Protect Password:="myPassword"
 Sheets("Sheet1").Protect Password:=InputBox("Enter a protection password:")	
 ```
 	
-### Unprotecting	
+### Sheet.UnProtect method
 	
 ```
 Sheets("Sheet1").UnProtect

@@ -132,23 +132,93 @@ ActiveWorkbook.UnProtect Password:=InputBox("Enter a protection password:")
 ActiveWorkbook.Protect "password"
 ```
 	
+### Workbook.Activate method
+[link] (https://learn.microsoft.com/en-us/office/vba/api/excel.workbook.activate(method))
+
+EN: Activates the first window associated with the workbook.
+
+PL: TBA
+
+```
 TBA
+```
 
-Workbook.Activate
+### Using Workbook Index numbers
+[link] (TBA)
 
-Using Workbook Index numbers
+EN: TBA
 
-Workbook.Close
+PL: TBA
 
-ActiveWorkbook
+```
+TBA
+```
 
-ThisWorkbook
+### Workbook.Close method
+[link] (https://learn.microsoft.com/en-us/office/vba/api/excel.workbook.close)
 
-Workbooks.Add
+EN: TBA
 
-Workbooks.Open
+PL: TBA
 
-Workbooks.Save
+```
+TBA
+```
+
+### Workbooks.Open method
+[link] ([TBA](https://learn.microsoft.com/en-us/office/vba/api/excel.workbooks.open))
+
+EN: TBA
+
+PL: TBA
+
+```
+TBA
+```
+
+### Application.ActiveWorkbook property
+[link] (https://learn.microsoft.com/pl-pl/office/vba/api/excel.application.activeworkbook)
+
+EN: Returns a Workbook object that represents the workbook in the active window (the window on top).
+
+PL: TBA
+
+```
+TBA
+```
+
+### Application.ThisWorkbook property
+[link] (https://learn.microsoft.com/pl-pl/office/vba/api/excel.application.thisworkbook)
+
+EN: Returns a Workbook object that represents the workbook where the current macro code is running. Read-only.
+
+PL: TBA
+
+```
+TBA
+```
+
+### Workbooks.Add method
+[link] (https://learn.microsoft.com/en-us/office/vba/api/excel.workbooks.add)
+
+EN: Creates a new workbook. The new workbook becomes the active workbook.
+
+PL: TBA
+
+```
+TBA
+```
+
+### Workbook.Save method
+[link] (https://learn.microsoft.com/en-us/office/vba/api/excel.workbook.save)
+
+EN: Saves changes to the specified workbook.
+
+PL: TBA
+
+```
+TBA
+```
 
 -------------------------------------------------------------------------------------------------------------------
 
@@ -186,6 +256,7 @@ Sheets("Sheet1").Visible = TRUE
 
 ### Sheets.Index property
 [link](https://learn.microsoft.com/en-us/office/vba/api/excel.worksheet.index)
+
 [link](https://learn.microsoft.com/en-us/office/vba/excel/concepts/workbooks-and-worksheets/refer-to-sheets-by-index-number)
 
 An index number is a sequential number assigned to a sheet, based on the position of its sheet tab (counting from the left) among sheets of the same type. The following procedure uses the Worksheets property to activate the first worksheet in the active workbook.
@@ -291,3 +362,29 @@ Sheets("Sheet1").UnProtect Password:=InputBox("Enter a protection password:")
 
 -------------------------------------------------------------------------------------------------------------------
 
+## Functions (Excel VBA)
+[link](https://bettersolutions.com/vba/functions/index.htm)
+
+EN: A built-in VBA functions can be used to manipulate data or to perform specific calculations.
+
+PL: TBA
+
+```
+TBA
+```
+
+### MsgBox Function
+[link](https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/msgbox-function)
+
+```
+TBA
+```
+
+### InputBox Function
+[link](https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/inputbox-function)
+
+```
+TBA
+```
+
+...

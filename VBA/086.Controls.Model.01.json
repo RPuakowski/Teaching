@@ -1,0 +1,27 @@
+[
+ {
+   "Produkt": "Produkt A",
+   "Użyteczność": "1,75",
+   "Cena bazowa": "29,40"
+ },
+ {
+   "Produkt": "Produkt B",
+   "Użyteczność": "2,78",
+   "Cena bazowa": "26,10"
+ },
+ {
+   "Produkt": "Produkt C",
+   "Użyteczność": "0,91",
+   "Cena bazowa": "33,30"
+ },
+ {
+   "Produkt": "Produkt D",
+   "Użyteczność": "0,31",
+   "Cena bazowa": "30,00"
+ },
+ {
+   "Produkt": "Produkt E",
+   "Użyteczność": "0,62",
+   "Cena bazowa": "30,24"
+ }
+]

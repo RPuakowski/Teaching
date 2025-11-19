@@ -1,56 +1,102 @@
 [
   {
-    "Kod": "201",
+    "Kod": 201,
     "etykieta": "mydło w kostkach",
-    "cena producenta ": "4,00 ",
-    "": ""
+    "cena producenta": "4,00"
   },
   {
-    "Kod": "202",
+    "Kod": 202,
     "etykieta": "mydło w płynie",
-    "cena producenta ": "9,00 ",
-    "": ""
+    "cena producenta": "9,00"
   },
   {
-    "Kod": "203",
+    "Kod": 203,
     "etykieta": "ręczniki papierowe",
-    "cena producenta ": "8,00 ",
-    "": ""
+    "cena producenta": "8,00"
   },
   {
-    "Kod": "204",
+    "Kod": 204,
     "etykieta": "papier toaletowy",
-    "cena producenta ": "10,00 ",
-    "": ""
+    "cena producenta": "10,00"
   },
   {
-    "Kod": "205",
+    "Kod": 205,
     "etykieta": "odświeżacz powietrza",
-    "cena producenta ": "12,00 ",
-    "": ""
+    "cena producenta": "12,00"
   },
   {
-    "Kod": "206",
+    "Kod": 206,
     "etykieta": "odkamieniacz",
-    "cena producenta ": "15,00 ",
-    "": ""
+    "cena producenta": "15,00"
   },
   {
-    "Kod": "207",
+    "Kod": 207,
     "etykieta": "pasta do zębów",
-    "cena producenta ": "8,00 ",
-    "": ""
+    "cena producenta": "8,00"
   },
   {
-    "Kod": "208",
+    "Kod": 208,
     "etykieta": "płyn do płukania jamy ustnej",
-    "cena producenta ": "16,00 ",
-    "": ""
+    "cena producenta": "16,00"
   },
   {
-    "Kod": "209",
+    "Kod": 209,
     "etykieta": "proszek do prania biel",
-    "cena producenta ": "25,00 ",
-    "": ""
+    "cena producenta": "25,00"
+  },
+  {
+    "Kod": 210,
+    "etykieta": "proszek do prania kolor",
+    "cena producenta": "30,00"
+  },
+  {
+    "Kod": 211,
+    "etykieta": "płyn do płukania",
+    "cena producenta": "18,00"
+  },
+  {
+    "Kod": 212,
+    "etykieta": "płyn do podłóg",
+    "cena producenta": "16,00"
+  },
+  {
+    "Kod": 213,
+    "etykieta": "płyn do mebli",
+    "cena producenta": "21,00"
+  },
+  {
+    "Kod": 214,
+    "etykieta": "spray do mycia szyb",
+    "cena producenta": "5,00"
+  },
+  {
+    "Kod": 215,
+    "etykieta": "kostka wc",
+    "cena producenta": "13,00"
+  },
+  {
+    "Kod": 216,
+    "etykieta": "płyn do mycia kuchni",
+    "cena producenta": "14,00"
+  },
+  {
+    "Kod": 217,
+    "etykieta": "kostki do zmywarki",
+    "cena producenta": "13,00"
+  },
+  {
+    "Kod": 218,
+    "etykieta": "sól do zmywarki",
+    "cena producenta": "18,00"
+  },
+  {
+    "Kod": 219,
+    "etykieta": "nabłyszczacz do zmywarki",
+    "cena producenta": "6,00"
+  },
+  {
+    "Kod": 220,
+    "etykieta": "kapsułki piorące",
+    "cena producenta": "26,00"
   }
 ]

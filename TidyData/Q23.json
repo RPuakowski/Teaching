@@ -1,0 +1,56 @@
+[
+  {
+    "Kod": "201",
+    "etykieta": "mydło w kostkach",
+    "cena producenta ": "4,00 ",
+    "": ""
+  },
+  {
+    "Kod": "202",
+    "etykieta": "mydło w płynie",
+    "cena producenta ": "9,00 ",
+    "": ""
+  },
+  {
+    "Kod": "203",
+    "etykieta": "ręczniki papierowe",
+    "cena producenta ": "8,00 ",
+    "": ""
+  },
+  {
+    "Kod": "204",
+    "etykieta": "papier toaletowy",
+    "cena producenta ": "10,00 ",
+    "": ""
+  },
+  {
+    "Kod": "205",
+    "etykieta": "odświeżacz powietrza",
+    "cena producenta ": "12,00 ",
+    "": ""
+  },
+  {
+    "Kod": "206",
+    "etykieta": "odkamieniacz",
+    "cena producenta ": "15,00 ",
+    "": ""
+  },
+  {
+    "Kod": "207",
+    "etykieta": "pasta do zębów",
+    "cena producenta ": "8,00 ",
+    "": ""
+  },
+  {
+    "Kod": "208",
+    "etykieta": "płyn do płukania jamy ustnej",
+    "cena producenta ": "16,00 ",
+    "": ""
+  },
+  {
+    "Kod": "209",
+    "etykieta": "proszek do prania biel",
+    "cena producenta ": "25,00 ",
+    "": ""
+  }
+]
